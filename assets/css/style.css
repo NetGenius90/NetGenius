@@ -4,18 +4,32 @@
 
 :root{
     --var-bg-color :linear-gradient(to left ,rgb(7, 32, 70) ,rgb(11, 18, 77));
+    --var-bg-light-color : rgb(73, 172, 243);
+    --background-image :linear-gradient(rgba(0, 0, 0, 0.171),rgba(0, 0, 0, 0.748)),url(../images/background.jpeg);
     --var-color-white :white;
     --var-Roboto-font :'Roboto', sans-serif;
     --var-poppins-font : 'Poppins', sans-serif;
-    --var-light-shadow :  0 0 20px rgba(0, 0, 0, 0.459);
+    --var-light-shadow :  0 0 20px rgba(171, 169, 169, 0.459);
     --button-radius  : 5px;
-    --button-colors : rgb(0, 110, 255);
+    --button-colors : rgb(53, 141, 255);
     --var-input-border : 1px solid rgba(0, 0, 0, 0.534);
+    --var-heading-clor :  rgb(11, 37, 82);
     /* animations variables */
     --var-paragraph-animation : paragraph 1.5s;
     --var-heading-animation :  heading 1.5s ;
     --var-image-animation-zoom :  imagezoom 1.5s ;
 }
+/* scroll bar css */
+::-webkit-scrollbar {
+    width: 10px;
+    background: var(--var-bg-color);
+  }
+::-webkit-scrollbar-thumb
+{
+    background-color:var(--var-bg-light-color);
+    border-radius:50% ;
+}
+/* scroll bar css ends */
 *{
     font-family: var(--var-Roboto-font);
     margin: 0;
@@ -36,18 +50,61 @@ body{
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
-    background:var(--var-bg-color);
-    padding: 20px;
+    background:var(--background-image);
+    background-position: center;
+    
 }
 .navbar{
     display: flex;
+    padding: 10px;
     justify-content: space-between;
     box-sizing: border-box;
 }
+.navbar-next
+{
+  background-color: var(--var-color-white);
+  position: fixed;
+  width: 100%;
+  animation: fade 1.2s;
+  z-index: 1000;
+}
+@keyframes fade {
+    from
+    {
+        opacity: 0;
+        transform: perspective(50%);
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+.a a{
+    color: black!important;
+}
+
+
 .brand{
     font-size: 25px;
-    color: white;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    left: 50px;
+    font-family: var(--var-poppins-font);
+    font-weight: bolder;
+    color: var(--var-color-white);
 }
+.brand a {
+    position: relative;
+    text-decoration: none;
+    color:var(--var-color-white);
+    padding: 10px;
+    font-size: 30px;
+}
+.brand img{
+    filter: brightness(300%);
+}
+
 .links>ul{
     display: flex;
     padding: 10px;
@@ -89,11 +146,11 @@ body{
 /* hero banner section*/
 .hero-banner{
     padding: 30px;
-    width: 100%;
+    width: auto;
     display: grid;
     height:800px;
     overflow: hidden;
-    grid-template-columns:600px 100%;
+    grid-template-columns:auto auto;
     column-gap: 200px;
 }
 .hero-text{
@@ -190,17 +247,22 @@ body{
 /* banner image */
 .hero-image
 {
-        width: 100%;
+        width:100%;
         position: relative;
         bottom: 40px;
-        overflow: hidden;
  }
  .hero-image >img{
-    height:900px;
+   
+    object-fit: contain;
+    min-height:100%;
+    height: auto;
+
     animation:var(--var-image-animation-zoom);
-    width: 750px ;
+    width: 100%;
+    padding: 10px;
+    object-position: center;
     position: relative;
-    bottom: 70px;
+
     filter: drop-shadow(--var-light-shadow);
  }
 @keyframes imagezoom{
@@ -215,12 +277,16 @@ body{
 }
  /* bottom tags */
  .bottom-tags
- {
-    display: grid;
-    margin: auto;
-    grid-template-columns: auto auto auto auto ;
-    padding: 30px;
-    width: 550px;
+ {  display: grid;
+    grid-template-columns:auto auto auto auto ;
+    justify-content: center;
+    column-gap: 200px;
+    position: relative;
+    right: 50px;
+    font-family: var(--var-poppins-font);
+    font-size: 18px;
+    row-gap: 20px;
+    bottom: 60px;   
     color: var(--var-color-white);
     white-space: nowrap;
  }
@@ -229,6 +295,34 @@ body{
     width: 30px;
     text-align: center;
     margin-left: 10px;
+    animation: var(--var-heading-animation);
     padding: 10px;
     color: var(--var-color-white);
  }
+ .bottom-text  p{
+    color: var(--var-color-white);
+    animation: var(--var-image-animation-zoom);
+    font-family: var(--var-poppins-font);
+ }
+ /* offer section */
+
+ .offer-container
+ {
+    height: 700px;
+    padding: 30px;
+    position: relative;
+    top: 40px;
+}
+
+.offer-text h1{
+    text-align: center;
+    font-family: var(--var-poppins-font);
+    color:var(--var-heading-clor);
+    font-size: 45px;
+    padding: 10px;
+}
+
+.offer-text p {
+    text-align: center;
+    width: 600px;
+}
