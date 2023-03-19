@@ -1,6 +1,6 @@
 $(document).ready(function(){
     let navbar          = $('#nav-bar-container');
-    let navLinks        = $('#navlinks');
+    let navLinks        = $('#nav-bar-links');
     let brand           = $('#brand')
     let signBtn         = $('#sign');    
     var lastScrollTop = 10, delta = 5;
@@ -26,7 +26,21 @@ $(document).ready(function(){
         }
     });
 
-  
+    // navbar toggler button
+    let toggleBtn        = $('#toggle-button');
+    let navbarLinks      = $('#nav-bar-links');   
+    let closeBtn         = $('#close-button'); 
+    // show data   
+    $(toggleBtn).on('click' , function(e){
+        e.preventDefault();
+        navbarLinks.show();
+       
+    });
+    // hide navbar
+    $(closeBtn).on('click' , function (e) { 
+        e.preventDefault();
+        navbarLinks.hide();
+     });
 
 
 
