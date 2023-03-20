@@ -22,6 +22,7 @@
     --var-heading-animation :  heading 1.5s ;
     --var-image-animation-zoom :  imagezoom 1.5s ;
     --var-left-slide : leftslide 1.3s ;
+    --var-fade : fade 1.2s;
 }
 /* scroll bar css */
 ::-webkit-scrollbar {
@@ -31,7 +32,7 @@
 ::-webkit-scrollbar-thumb
 {
     background-color:var(--var-bg-light-color);
-    border-radius:50% ;
+    border-radius:20px ;
 }
 /* scroll bar css ends */
 *{
@@ -69,7 +70,7 @@ body{
   background-color: var(--var-color-white);
   position: fixed;
   width: 100%;
-  animation: fade 1.2s;
+  animation: var(--var-fade);
   z-index: 1000;
 }
 @keyframes fade {
@@ -139,6 +140,7 @@ body{
 .get-started-link > a{
     background: var(--button-colors);
     padding: 10px;
+    white-space: nowrap;
     color: var(--var-color-white);
     font-family:var(--var-poppins-font);
     text-decoration: none;
