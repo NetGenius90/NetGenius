@@ -22,7 +22,7 @@ $(document).ready(function(){
                 brand.removeClass('a');
                 signBtn.removeClass('a');
            }
-             lastScrollTop = nowScrollTop;
+             lastScrollTop < nowScrollTop;
         }
     });
 
