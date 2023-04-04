@@ -67,16 +67,28 @@
                             <div id="input-error-company"></div>
                             <!-- Password -->
                             <label for="name">Password</label><br>
-                            <input type="text"  name="password" class="form-style" id="company"  placeholder="Enter your Name">
-                            <div id="password_error"></div>
+                         <div class="password">
+                            <input type="text"  name="password" class="form-style" id="company"  placeholder="Enter your Name"> 
+                            <!-- show btn -->
+                            <button id="show-btn" class="eyebtn"><i class="fa fa-eye"></i></button>
+                            <!-- hide btn -->
+                            <button id="hide-btn" class="eyebtn"><i class="fa fa-eye-slash "></i></button>
+                        </div>
+                        <div id="password_error"></div>
                             <!-- Confirm Password -->
                             <label for="name">Confirm Password</label><br>
+                           <div class="password">
                             <input type="text"  name="confirmpassword" class="form-style" id="company"  placeholder="Enter your Name">
+                               <!-- show btn -->
+                               <button id="show-btn2" class="eyebtn"><i class="fa fa-eye"></i></button>
+                               <!-- hide btn -->
+                               <button id="hide-btn2" class="eyebtn"><i class="fa fa-eye-slash "></i></button>
+                           </div>
                             <div id="input-error-confirm-password"></div>
                             <!-- input sction end -->
                             <input type="checkbox" name="terms" id="" > &nbsp;   <span id="conditions">I have read and agreed to the </span> <a class="terms" id="terms-conditions">terms and conditions </a>
                             <!-- submit button -->
-                            <input type="submit" value="Submit" class="submit-btn">
+                            <input type="submit" value="Submit" id="submit-btn" class="submit-btn">
                 </div>
              </div>
             </div>

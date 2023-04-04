@@ -39,7 +39,7 @@ body{
        min-height: 500px;
        height: auto;
        background-color: var(--var-color-white );
-       max-width: 700px;
+       max-width: 740px;
        margin: auto;
        position: relative;
        top: 10%;
@@ -133,4 +133,23 @@ body{
     border-radius: var(--button-radius);
     color: white;
     box-shadow: var(--var-light-shadow);
+}
+.password{
+    display: flex;
+}
+#hide-btn{
+    display: none;
+}
+#hide-btn2{
+    display: none;
+}
+.eyebtn{
+    background: transparent;
+    border: none;
+    position: relative;
+    bottom: 6px;
+    right: 26px;
+}
+.eyebtn:focus{
+    color: var(--button-colors);
 }
