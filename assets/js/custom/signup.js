@@ -1,22 +1,22 @@
 $(document).ready(function(){
- let form = $('#register-form');
- let name = $('input[name="name"]');
- let email  = $('input[name="email"]');
- let company = $('input[name="company"]');
- let password = $('input[name="password"]');
- let confirmpassword = $('input[name="confirmpassword"]');
+ let form                   = $('#register-form');
+ let name                   = $('input[name="name"]');
+ let email                  = $('input[name="email"]');
+ let company                = $('input[name="company"]');
+let password                = $('input[name="password"]');
+ let confirmpassword        = $('input[name="confirmpassword"]');
 //  buttons
-let submitBtn = $('#submit-btn');
-let showBtn = $('#show-btn');
-let hideBtn = $('#hide-btn');
-let showBtn2 = $('#show-btn2');
-let hideBtn2 = $('#hide-btn2');
+let submitBtn               = $('#submit-btn');
+let showBtn                 = $('#show-btn');
+let hideBtn                 = $('#hide-btn');
+let showBtn2                = $('#show-btn2');
+let hideBtn2                = $('#hide-btn2');
 //  errors
- let name_error = $('#input-error-name');
- let email_error = $('#input-error-email');
- let company_error = $('#input-error-company');
- let password_error = $('#password_error');
- let confirm_error = $('#input-error-confirm-password');
+ let name_error             = $('#input-error-name');
+let email_error             = $('#input-error-email');
+ let company_error          = $('#input-error-company');
+ let password_error         = $('#password_error');
+ let confirm_error          = $('#input-error-confirm-password');
 //  functions
 password.prop('type','password');
 confirmpassword.prop('type', 'password');
