@@ -26,39 +26,69 @@
 /* MediaQuery Start */
 @media only screen and (max-width: 300px) and (min-width: 88px) {
     /* navbar section mediaquery start */
+    /* logo set */
     .navbar
     .brand 
     img
     {
-        width: 100px;
-        height: 100px;
+        width: 30px;
+        height: 40px;
+    }
+    .navbar 
+    .brand
+    a
+    { 
+        padding: 10px 0px 0px 5px;
+        font-size: 16px;
+    }  
+    .navbar{
+        height: auto
     }
     .navbar
     .button 
     .register-link 
-    a
+     a
     {
         padding: 0;
-        margin: 0;
+        width: 50px;
+        margin-right: 10px;
+        margin-left: 100px;
         display: inline-block;
+        font-size: 13px;
+    }
+    .button ul li
+    {
+        
+        /* margin-left: 100px; */
+        margin-top: -50px;
     }
     .navbar
     .button
     .get-started-link
     {
         width: 100px;
-        font-size: 15px;
-        margin-left: -60px;
+        padding: 0%;
+        font-size: 9px;
+        margin:-38px 0px 0px -10px;
     }
     .navbar 
     .button 
     .toggle-button 
     {
-        padding: 0;
-        width: 100%;
-        display: inline-block;
-        align-items: center;
-        margin-left: 70px;
+        padding: 0px;
+        width: auto;
+        margin-left: 0px;
+    }
+    .navbar
+    .button
+    .get-started-link
+    .toggle-button
+    {
+        height: auto;
+        text-align: center;
+        font-size: 10px;
+        width: 70px;
+        padding: 8px;
     }
     .navbar 
     .button 
@@ -231,53 +261,128 @@
      }
     }      
 /* right-side-data meidaquery end */
+/* experience setion start */
+.image-section
+{
+    display: none;
+}
+
+.experience 
+.text-section 
+{
+    padding: 10px;
+    text-align: left;
+    width: 25px;
+    position: relative;
+    margin-bottom: 60%;
+}
+.experience
+.text-section
+h4{
+    font-size: 33px;
+} 
+.experience
+.text-section
+p
+{
+   padding: 0;
+}
+.text-section
+h5
+{
+    width: auto;
+} 
+.experience
+.card-section
+.card   
+{
+
+    width: auto;
+}
+.card-section
+.card 
+h3
+{
+    margin: 0px;
+   width: auto;
+}
+.card-section
+.card 
+h5
+{
+    font-size: 14px;
+    width: auto;
+}
+
+
+/* experience setion end */
 /* feature section end */
 @media only screen and (max-width: 500px) and (min-width: 301px) {
     .navbar
     .brand 
     img
     {
-        width: 60px;
-        height: 50px;
-    }    
+        margin-left:-40px;
+        width: 25px;
+        height: 30px;
+    }  
+    .navbar 
+    .brand
+    a
+    { 
+        padding: 10px 0px 0px 5px;
+        font-size: 16px;
+    }  
     .navbar{
-        height: 150px;
+        /* margin: 10px; */
+        height: auto
     }
     .navbar
     .button 
     .register-link 
-    a
+     a
     {
         padding: 0;
-        margin: 0;
+        width: 50px;
+        margin-right: 10px;
+        margin-left: 100px;
         display: inline-block;
+        font-size: 13px;
+    }
+    .button ul li
+    {
+        
+        /* margin-left: 100px; */
+        margin-top: -50px;
     }
     .navbar
     .button
     .get-started-link
     {
         width: 100px;
-        font-size: 15px;
-        margin-left: -60px;
+        padding: 0%;
+        font-size: 9px;
+        margin:-38px 0px 0px -10px;
     }
     .navbar 
     .button 
     .toggle-button 
     {
-        padding: 0;
-        width: 100%;
-        display: inline-block;
-        align-items: center;
-        margin-left: 70px;
+        padding: 0px;
+        width: auto;
+        margin-left: 0px;
     }
-    .navbar 
-    .button 
-    .toggle-button 
-    i
+    .navbar
+    .button
+    .get-started-link
+    .toggle-button
     {
-        font-size: 200px;
-        margin-left: -30px;
-    } 
+        height: auto;
+        text-align: center;
+        font-size: 10px;
+        width: 70px;
+        padding: 8px;
+    }
     .navbar 
     .button
      ul
@@ -409,7 +514,6 @@
         font-weight: bolder;
         padding-bottom: 30px;
     }
-
 /* left Section mediaquery end*/
 /* right-side-data meidaquery start */
      .feature-section 
@@ -445,15 +549,70 @@
          margin-left: 20px;
          margin-top: 150px;
          width: 360px;
-         bottom: 250px;
+         /* bottom: 250px; */
          display: block;
          margin-left: auto;
          margin-right: auto;
-        vertical-align: middle;
+         vertical-align: middle;
      }
     }      
 /* right-side-data meidaquery end */
 /* feature section end */
+/* experience setion start */
+    .image-section
+    {
+        display: none;
+    }
+
+    .experience 
+    .text-section 
+    {
+        padding: 10px;
+        text-align: left;
+        width: 366px;
+        position: relative;
+        margin-bottom: 60%;
+    }
+    .experience
+    .text-section
+    h4{
+        font-size: 33px;
+    } 
+    .experience
+    .text-section
+    p
+    {
+       padding: 0;
+    }
+    .text-section
+    h5
+    {
+        width: auto;
+    } 
+    .experience
+    .card-section
+    .card   
+    {
+
+        width: auto;
+    }
+    .card-section
+    .card 
+    h3
+    {
+        margin: 0px;
+       width: auto;
+    }
+    .card-section
+    .card 
+    h5
+    {
+        font-size: 14px;
+        width: auto;
+    }
+
+
+/* experience setion end */
 /* 3 */
 @media only screen and (max-width: 915px) and (min-width: 501px) {
     /* navbar section mediaquery start */
@@ -469,29 +628,62 @@
     {
         font-size: 20px;
     }
+    .navbar 
+    .brand
+    a
+    { 
+        padding: 10px 0px 0px 5px;
+        font-size: 16px;
+    }  
     .navbar{
-        height: 90px;
+        height: auto
     }
     .navbar
     .button 
     .register-link 
-    a
+     a
     {
         padding: 0;
-        margin: 10px 20px 0px 10px;
+        width: 50px;
+        margin-right: 10px;
+        margin-left: 100px;
         display: inline-block;
+        font-size: 13px;
+    }
+    .button ul li
+    {
+        
+        /* margin-left: 100px; */
+        margin-top: -50px;
     }
     .navbar
     .button
     .get-started-link
     {
-        display: inline;
-        width: 200px;
-        margin-top: 10px;
-        font-size: 10px;
-        margin-left: -70px;
+        width: 100px;
+        padding: 0%;
+        font-size: 9px;
+        margin:-38px 0px 0px -10px;
     }
-    
+    .navbar 
+    .button 
+    .toggle-button 
+    {
+        padding: 0px;
+        width: auto;
+        margin-left: 0px;
+    }
+    .navbar
+    .button
+    .get-started-link
+    .toggle-button
+    {
+        height: auto;
+        text-align: center;
+        font-size: 10px;
+        width: 70px;
+        padding: 8px;
+    }
     .page-links
     {
         font-size: 14px;
@@ -518,6 +710,10 @@
     /* navbar section mediaquery end */
     /* hero image */
     .hero-image{
+        display: none;
+    }
+    .image
+    {
         display: none;
     }
     /* banner section mediaquery start */
@@ -703,6 +899,42 @@
     }
 /* right-side-data meidaquery end */
 /* feature section end */
+/* experience setion start */
+.image-section
+{
+    position: relative;
+    display: none;
+}
+.experience 
+.text-section 
+{
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 10%;
+} 
+.text-section
+h5
+{
+    width: 100px;
+} 
+.experience
+.card-section
+.card   
+{
+    width: auto;
+}
+.card 
+h3
+{
+    margin: 0px;
+   width: auto;
+}
+.card-section
+{
+    margin-bottom: 180px;
+}
+/* experience setion end */
 }
 /* 4 */
 @media only screen and (max-width: 1100px) and (min-width: 916px) {
@@ -947,12 +1179,91 @@
         background-size: cover;
         object-fit:cover;
         height: 500px;
+        text-align: center;
         margin-top: 140px;
-        margin: 140px 20px 0px 150px;
         width: 500px;
         bottom: 210px;
+        margin: 140px auto 210px auto;
     }
 /* right-side-data meidaquery end */
 /* feature section end */
+/* experience setion start */
+.image-section
+{
+    display: none;
+}
+.experience 
+.text-section 
+{
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 10%;
+} 
+.text-section
+h5
+{
+    width: auto;
+} 
+.experience
+.card-section
+.card   
+{
+    width: auto;
+}
+.card 
+h3
+{
+    margin: 0px;
+   width: auto;
+}
+.card-section
+{
+    margin-bottom: 180px;
+}
+/* experience setion end */
+}
+/* 5 */
+@media only screen and (max-width: 1368px) and (min-width: 1101px) {
+/* experience setion start */
+.image-section
+{
+    display: block;
+}
+.experience 
+.text-section 
+{
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 20%;
+} 
+.text-section
+h5
+{
+    width: auto;
+} 
+.experience
+.card-section
+.card   
+{
+    width: auto;
+}
+.card 
+h3
+{
+    margin: 0px;
+   width: auto;
+}
+.card-section
+{
+    margin-bottom: 80px;
+}
+/* experience setion end */
 }
 /* MediaQuery End */
+
+
+
+
+
