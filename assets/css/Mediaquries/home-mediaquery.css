@@ -5,7 +5,7 @@
 :root{
     --var-bg-color :linear-gradient(to left ,rgb(7, 32, 70) ,rgb(11, 18, 77));
     --var-bg-light-color : rgb(73, 172, 243);
-    --background-image :linear-gradient(rgba(0, 0, 0, 0.171),rgba(0, 0, 0, 0.748)),url(../images/background.jpeg);
+    --background-image :linear-gradient(to right ,rgba(0, 0, 0, 0.744),rgba(0, 0, 0, 0.113)),url(../images/background.jpg);
     --var-color-white :white;
     --var-Roboto-font :'Roboto', sans-serif;
     --var-poppins-font : 'Poppins', sans-serif;
@@ -95,6 +95,8 @@
         padding: 10px;
         text-align: center;
     }
+    
+
     .hero-banner 
     .hero-text
     .offer-text

@@ -3,8 +3,9 @@ $(document).ready(function(){
  let name                   = $('input[name="name"]');
  let email                  = $('input[name="email"]');
  let company                = $('input[name="company"]');
-let password                = $('input[name="password"]');
+ let password               = $('input[name="password"]');
  let confirmpassword        = $('input[name="confirmpassword"]');
+ var formArrayData          = [];
 //  buttons
 let submitBtn               = $('#submit-btn');
 let showBtn                 = $('#show-btn');
@@ -23,6 +24,16 @@ confirmpassword.prop('type', 'password');
 // password 
 
 $(form).submit(function(e){
+   
+//    storing data to array
+    form = {};
+    $(this).serializeArray().forEach(function(input){
+      input.name = input.value;
+    });
+    console.log(form);
+    formArrayData.push(form);
+   
+    // end
     e.preventDefault();
       if($(name).val()==""){
        name_error.html('<label style="color:red;">Name field is required</label>')
@@ -30,6 +41,7 @@ $(form).submit(function(e){
        if($(email).val()==""){
         email_error.html('<label style="color:red;">Email field is required</label>')
        }
+       
        if($(company).val()==""){
         company_error.html('<label style="color:red;">Company field is required</label>')
        }
@@ -58,11 +70,15 @@ $(name).on('keyup', function(e){
 
 $(email).on('keyup', function(e){
     e.preventDefault()
-    if(email.val() != ''){
+    if(email.val() != '' && $(email).val().match(/^\S+\@\S+\.\S+$/)){
         email_error.html('');
         submitBtn.prop('disabled',false);
     }
-    else{
+    if(!$(email).val().match(/^\S+\@\S+\.\S+$/)){
+        submitBtn.prop('disabled',false);
+        email_error.html('<label style="color:red; font-size:10px; white-space:nowrap;">Invalid Email e.g Example@gmail.com</label>')
+       }
+    if(email.val()==''){
        email_error.html('<label style="color:red;">Email field is required</label>')
        submitBtn.prop('disabled',true);
     }

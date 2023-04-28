@@ -5,7 +5,7 @@
 :root{
     --var-bg-color :linear-gradient(to left ,rgb(7, 32, 70) ,rgb(11, 18, 77));
     --var-bg-light-color : rgb(73, 172, 243);
-    --background-image :linear-gradient(rgba(0, 0, 0, 0.171),rgba(0, 0, 0, 0.748)),url(../images/background.jpeg);
+    --background-image :linear-gradient(to right ,rgba(0, 0, 0, 0.744),rgba(0, 0, 0, 0.113)),url(../images/background.jpg);
     --var-color-white :white;
     --var-Roboto-font :'Roboto', sans-serif;
     --var-poppins-font : 'Poppins', sans-serif;
@@ -25,7 +25,7 @@
 }
 /* scroll bar css */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background: var(--var-bg-color);
   }
 ::-webkit-scrollbar-thumb
@@ -51,6 +51,9 @@ body{
 .banner-container
 {
     backface-visibility: hidden;
+    background-size: cover;
+    object-fit: contain;
+    background-repeat: no-repeat;
     height: auto;
     min-height: 100vh;
     width: 100%;
@@ -75,6 +78,23 @@ body{
   z-index: 1000;
   height: 90px;
 }
+.navbar-next .get-started-link >a {
+    background-color: var(--button-colors);
+}
+.slash{
+    color: white;
+}
+.navbar-next .slash{
+    color: black;
+}
+.navbar-next .icons{
+    color: var(--button-colors);
+}
+.get-started-link >a:hover{
+    background-color: var(--button-colors);
+    transition: 0.5s linear all;
+    box-shadow: 0  0 20px var(--button-colors);
+}
 @keyframes fade {
     from
     {
@@ -96,7 +116,7 @@ body{
     padding: 10px;
     display: flex;
     position: relative;
-    left: 50px;
+    left: 30px;
     font-family: var(--var-poppins-font);
     font-weight: bolder;
     color: var(--var-color-white);
@@ -110,6 +130,10 @@ body{
 }
 .brand img{
     filter: brightness(300%);
+    width: 40px;
+    position: relative;
+    top:5px;
+    height: 40px;
 }
 
 .links>ul{
@@ -119,15 +143,48 @@ body{
 }
 .page-links{
     padding: 10px;
-    margin-left: 10px;
+    left: 15px;
+    white-space: nowrap;
     color: white;
+    top: 10px;
     font-weight: 400;
-  
+    font-size: 15px;
+    position: relative;
+}
+
+.page-links::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--button-colors);
+  transform: scaleX(0);
+  transition: transform 0.3s linear;
+}
+.page-links::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    top: 0;
+    right: 0;
+    background-color: var(--button-colors);
+    transform: scaleX(0);
+    transition: transform 0.4s linear;
+  }
+.page-links:hover::after ,
+.page-links:hover::before {
+  transform: scaleX(1);
+  width: 100%;
+
 }
 .page-links > a , .register-link > a{
     color: white;
     font-family: var(--var-poppins-font);
-  
+    white-space: nowrap;
+    font-size: 15px;
     text-decoration: none;
 }
 .button>ul{
@@ -139,15 +196,19 @@ body{
     margin-left: 10px;
     padding: 10px;
 }
+.button{
+    position: relative;
+    top: 10px;
+}
 .get-started-link > a{
-    background: var(--button-colors);
+    background: transparent;
     padding: 10px;
+    white-space: nowrap;
     color: var(--var-color-white);
     font-family:var(--var-poppins-font);
     text-decoration: none;
     box-shadow:var(--var-light-shadow);
-    border-radius:var(--button-radius);
-
+    border: 3px solid var(--button-colors);
 }
 .toggle-button{
     display: none;
@@ -247,3 +308,4 @@ body{
     }
 
     }
+    
