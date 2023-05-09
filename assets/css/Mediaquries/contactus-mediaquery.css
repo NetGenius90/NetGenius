@@ -1,10 +1,5 @@
-@media (max-width:1199px)
+@media (max-width:1179px)
 {
-    .btn1
-    {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
     .contact-img img
     {
         position: relative;
@@ -13,22 +8,45 @@
         display: block;
         width: 450px;
         height: 400px;
-    }   
-    .btn1
-    { padding: 10px 40px;
-        max-width: 10%;
+    } 
+    .inner .flip-button
+    {
+        width: 100px;
+        padding: 5px 30px;
     }
+    .contact-section
+    {
+        margin: 0px;
+    }
+    .contact-form  
+    {
+        position: relative;
+        top: 300px;
+    }
+    .btn
+    {
+        position: relative;
+        top: 10px;
+    }   
 }
-@media (max-width:900px) {
+@media (max-width:990px) {
+    .box-item 
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
     .contact-text 
     {
-      padding: 0%;
+      padding: 5% 10%;
     }
     .contact-text p
     {
         position: relative;
         top: 140px;
-        font-size: 14px;
+        font-size: 17px;
     }
     .contact-text h1
     {
@@ -36,19 +54,12 @@
         top: 80px;
         font-size: 40px;
     }
-    .flip-box-front , .flip-box-fronts
-    {
-        padding-bottom: 50px;
-        flex: 0 0 30%;
-        max-width: 30%;
-    }
     .contact-form 
     {
         padding-left: 50px;
         padding-right: 50px;
      
     }
-
     .contact-form .talk-section , .form-item
     {
         position: relative;
@@ -71,23 +82,87 @@
         flex:0 0 100%;
         max-width: 100%;
     }
-    .flip-box-front , .flip-box-fronts
+    .flip-box
     {
         flex: 0 0 100%;
         max-width: 100%;
     }
-
+    #flip-box-front
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    #flip-box-back
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .flip-box:hover #flip-box-back
+    {
+        flex: 0 0 100%;
+        min-width: 100%;
+     }
+     
+     .flip-box:hover #flip-box-front
+     {
+         flex: 0 0 100%;
+         max-width: 100%;
+     } 
+     .contact-section
+     {
+         margin: 0px;
+     }
+    .talk-section h1
+    {
+        top: -780px;
+        position: absolute;
+    }
+    .talk-section p
+    { top: -690px;
+        position: absolute;
+    }
+    .form-group
+    {
+        top: -439px;
+        position: inherit;
+    }
+    #main-form 
+    {
+      position: absolute;
+    }
+    #form-group
+    {
+        top: -320px;
+        position: relative;
+    }
+    .btn
+    {
+        position: relative;
+        top: 130px;
+    }
 }
 @media (max-width:780px) {
+    .contact-text 
+    {
+      padding: 5% 10%;
+    }
+    .contact-text p
+    {
+        max-width: 100%;
+        position: relative;
+        top: 140px;
+        font-size: 14px;
+    }
     .contact .contact-form
     {
         flex:0 0 100%;
         max-width: 100%;
     }
-    .flip-box-front , .flip-box-fronts
+    #flip-box-front , #flip-box-back
     {
         flex: 0 0 100%;
         max-width: 100%;
+        padding: 0;
     }
     .contact-card
     {
@@ -120,7 +195,6 @@
     {
         padding: 30px;
         position: absolute;
-        margin-top: 500px;
     }
     .contact-fleid .row .contact-img 
     {
@@ -148,8 +222,41 @@
         position: relative;
         top: 630px;
         font-size: 15px;
-        
     }
+    .contact-section
+    {
+        margin: 0px;
+    }
+   .talk-section h1
+   {
+       top: -780px;
+       position: absolute;
+   }
+   .talk-section p
+   { 
+    top: -610px;
+    font-size: 20px;
+    position: relative;
+   }
+   .form-group
+   {
+       top: -470px;
+       position: relative;
+   }
+   #form-group
+   {
+       top: -410px;
+       position: relative;
+   }
+   .btn
+   {
+       position: relative;
+       top: 50px;
+   }
+   .rows
+   {
+    padding: 15px;
+   }
 }
 @media (max-width:375px) {
     .talk-section h1
@@ -184,6 +291,11 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+
+
+
+
+
 }
 @media(prefers-reduce-motion) {
     .hidden {
