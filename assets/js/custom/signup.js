@@ -5,7 +5,6 @@ $(document).ready(function(){
  let company                = $('input[name="company"]');
  let password               = $('input[name="password"]');
  let confirmpassword        = $('input[name="confirmpassword"]');
- var formArrayData          = [];
 //  buttons
 let submitBtn               = $('#submit-btn');
 let showBtn                 = $('#show-btn');
@@ -14,7 +13,7 @@ let showBtn2                = $('#show-btn2');
 let hideBtn2                = $('#hide-btn2');
 //  errors
  let name_error             = $('#input-error-name');
-let email_error             = $('#input-error-email');
+ let email_error             = $('#input-error-email');
  let company_error          = $('#input-error-company');
  let password_error         = $('#password_error');
  let confirm_error          = $('#input-error-confirm-password');
@@ -24,15 +23,6 @@ confirmpassword.prop('type', 'password');
 // password 
 
 $(form).submit(function(e){
-   
-//    storing data to array
-    form = {};
-    $(this).serializeArray().forEach(function(input){
-      input.name = input.value;
-    });
-    console.log(form);
-    formArrayData.push(form);
-   
     // end
     e.preventDefault();
       if($(name).val()==""){
