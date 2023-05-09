@@ -1,0 +1,192 @@
+@media (max-width:1199px)
+{
+    .btn1
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .contact-img img
+    {
+        position: relative;
+        top: 100px;
+        padding: 0;
+        display: block;
+        width: 450px;
+        height: 400px;
+    }   
+    .btn1
+    { padding: 10px 40px;
+        max-width: 10%;
+    }
+}
+@media (max-width:900px) {
+    .contact-text 
+    {
+      padding: 0%;
+    }
+    .contact-text p
+    {
+        position: relative;
+        top: 140px;
+        font-size: 14px;
+    }
+    .contact-text h1
+    {
+        position: absolute;
+        top: 80px;
+        font-size: 40px;
+    }
+    .flip-box-front , .flip-box-fronts
+    {
+        padding-bottom: 50px;
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+    .contact-form 
+    {
+        padding-left: 50px;
+        padding-right: 50px;
+     
+    }
+
+    .contact-form .talk-section , .form-item
+    {
+        position: relative;
+        top: 600px;
+    }
+    .contact-img
+    {
+        flex: 0 0 0;
+        max-width: 0%;
+        display: none;
+    }
+    .contact-fleid
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+        background-color: blueviolet;
+    }
+    .contact .contact-form
+    {
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    .flip-box-front , .flip-box-fronts
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+}
+@media (max-width:780px) {
+    .contact .contact-form
+    {
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    .flip-box-front , .flip-box-fronts
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .contact-card
+    {
+        padding-left:30px;
+        padding-right:50px;
+    }
+    .talk-section h1
+    {
+        font-size: 40px !important;
+        position: relative;
+        top: -20px;
+    }
+    .contact-form .talk-section , .form-item
+    {
+        padding-left: 30px;
+    }
+    .contact-section
+    {
+        padding: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .talk-section , .contact-form
+    {
+       
+        padding: 0;
+       
+    }
+    .contact-form 
+    {
+        padding: 30px;
+        position: absolute;
+        margin-top: 500px;
+    }
+    .contact-fleid .row .contact-img 
+    {
+        display: none;
+    }
+    .talk-section p
+    {
+        padding: 0;
+        position: relative;
+        top: 10px;
+        font-size: 15px;
+    }
+    .form-item .form-group
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .form-item
+    {
+        display: flex;
+        flex: 0 0 100%;
+        max-width: 100%;
+        max-width: 100%;
+        padding-left: 10px;
+        position: relative;
+        top: 630px;
+        font-size: 15px;
+        
+    }
+}
+@media (max-width:375px) {
+    .talk-section h1
+    {
+        font-size: 40px !important;
+        position: relative;
+        top: 60px;
+    }
+    .form-item .form-group
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .talk-section p
+    {
+        padding: 0;
+        position: relative;
+        top: 70px;
+        font-size: 15px;
+    }
+    .form-item
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 10px;
+        position: relative;
+        top: 680px;
+        font-size: 15px;
+    }
+    .form-group input
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media(prefers-reduce-motion) {
+    .hidden {
+        transition: none;
+    }
+}
